@@ -81,9 +81,15 @@ img {
 }
 
 /** Header **/
+.webp .header {
+  background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
+  background-image: url(../img/banner.jpg);
+}
 
 .header {
-  background-image: url(/img/banner.webp);
   height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,11 +248,11 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-   .curse {
+  .curse {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
-   }
+  }
 }
 
 .curse:last-of-type {
@@ -298,12 +304,11 @@ img {
   margin-right: 2rem;
 }
 
-.field__camp{
-flex: 1;
-border: 1px solid var(--gris);
+.field__camp {
+  flex: 1;
+  border: 1px solid var(--gris);
 }
 
 .field__camp--textarea {
   height: 20rem;
 }
-
